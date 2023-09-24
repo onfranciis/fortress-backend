@@ -57,7 +57,7 @@ app.get("/", (req, res) => {
 
 app.use(errorHandlerMiddleware);
 app.use(notFound);
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
+// app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
 
 const PORT = process.env.PORT;
 
